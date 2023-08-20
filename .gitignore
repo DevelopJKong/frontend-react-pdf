@@ -25,3 +25,6 @@ dist-ssr
 
 
 bun.lockb
+yarn.lock
+
+*.pdf
