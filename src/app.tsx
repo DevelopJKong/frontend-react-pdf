@@ -1,4 +1,4 @@
-import { Document, Page, View, Text, Link, Font, StyleSheet, PDFViewer } from '@react-pdf/renderer';
+import { Document, Page, View, Text, Link, Font, StyleSheet, PDFViewer, Image } from '@react-pdf/renderer';
 import { useState } from 'react';
 
 const styles = StyleSheet.create({
@@ -74,6 +74,14 @@ const App = () => {
           }}
         >
           <Page size='A4'>
+            <Image
+              style={{
+                width: 100,
+                height: 100,
+              }}
+              src='https://source.unsplash.com/random/100x100'
+            />
+
             <Link style={styles.title} src='https://es.wikipedia.org/wiki/Lorem_ipsum'>
               {count} Lorem Ipsum
             </Link>
